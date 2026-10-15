@@ -14,7 +14,7 @@ interface Book {
   author: string;
 }
 
-const API = "http://localhost:8080/api/books";
+const API = "/api/books";
 
 export default function App() {
   const [books, setBooks] = useState<Book[]>([]);
