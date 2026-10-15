@@ -12,7 +12,7 @@ fi
 
 # 1. Install Docker
 sudo dnf update -y
-sudo dnf install -y docker git curl file
+sudo dnf install -y docker
 
 sudo systemctl enable --now docker
 sudo usermod -aG docker "$(whoami)"
