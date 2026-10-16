@@ -14,7 +14,8 @@ interface Book {
   author: string;
 }
 
-const API = `${import.meta.env.VITE_API_URL}/api/books`;
+const API_URL = import.meta.env.VITE_API_URL;
+const API = API_URL? `${API_URL}/api/books` : "/api/books";
 
 export default function App() {
   const [books, setBooks] = useState<Book[]>([]);
